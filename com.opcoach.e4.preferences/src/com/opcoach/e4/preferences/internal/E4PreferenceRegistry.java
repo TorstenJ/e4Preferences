@@ -109,7 +109,7 @@ public class E4PreferenceRegistry
 						continue;
 					}
 					page = (PreferencePage) object;
-					setPreferenceStore(bundleId, page);
+					//setPreferenceStore(bundleId, page);
 
 				} catch (ClassNotFoundException e)
 				{
