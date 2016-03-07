@@ -109,6 +109,9 @@ public class E4PreferenceRegistry
 						continue;
 					}
 					page = (PreferencePage) object;
+					// do not set preference store from through plug-in or by
+					// default by the bundle it is in. Override method
+					// doGetPreferenceStore() on FieldEditorPage instead					
 					//setPreferenceStore(bundleId, page);
 
 				} catch (ClassNotFoundException e)
